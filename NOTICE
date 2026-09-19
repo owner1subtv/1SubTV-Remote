@@ -1,0 +1,6 @@
+1SubTV Remote includes Android TV Remote v2 protocol implementation concepts adapted from ScreenCast by ddagunts, licensed under the Apache License 2.0.
+
+ScreenCast: https://github.com/ddagunts/ScreenCast
+Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0
+
+Modifications include package/branding changes and integration into the 1SubTV Remote Android application.
