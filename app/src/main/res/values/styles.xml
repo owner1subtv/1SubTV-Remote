@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.OneSubTVRemote" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0B4F9C</item>
+        <item name="colorPrimaryVariant">#07386F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>
