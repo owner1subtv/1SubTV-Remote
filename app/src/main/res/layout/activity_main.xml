@@ -5,11 +5,13 @@
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="1SubTV Remote" android:textStyle="bold" android:textSize="28sp"/>
     <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="Ready to find your TV" android:paddingTop="8dp" android:paddingBottom="16dp"/>
+        android:text="Ready to find your TV" android:paddingTop="8dp" android:paddingBottom="12dp"/>
     <Button android:id="@+id/connect" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="Find & Connect TV"/>
+        android:text="Find &amp; Connect TV"/>
+    <Button android:id="@+id/voice" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="🎙 Voice Search"/>
     <GridLayout android:layout_width="match_parent" android:layout_height="0dp"
-        android:layout_weight="1" android:columnCount="3" android:rowCount="4" android:paddingTop="18dp">
+        android:layout_weight="1" android:columnCount="3" android:rowCount="4" android:paddingTop="12dp">
         <Button android:text="Back" android:layout_width="0dp" android:layout_columnWeight="1"/>
         <Button android:text="▲" android:layout_width="0dp" android:layout_columnWeight="1"/>
         <Button android:text="Home" android:layout_width="0dp" android:layout_columnWeight="1"/>
