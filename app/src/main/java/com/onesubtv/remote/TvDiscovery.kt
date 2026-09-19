@@ -36,7 +36,7 @@ class TvDiscovery(context: Context, private val onChanged: (List<TvDevice>) -> U
     }
 
     fun start() {
-        if (!active) nsd.discoverServices("_androidtvremote2._tcp.", NsdManager.PROTOCOL_DNS_SD, listener)
+        if (!active) nsd.discoverServices("_androidtvremote2._tcp", NsdManager.PROTOCOL_DNS_SD, listener)
     }
     fun stop() {
         if (active) runCatching { nsd.stopServiceDiscovery(listener) }
