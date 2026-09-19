@@ -21,17 +21,17 @@
         android:text="🎙 Voice Search"/>
     <GridLayout android:layout_width="match_parent" android:layout_height="0dp"
         android:layout_weight="1" android:columnCount="3" android:rowCount="4" android:paddingTop="12dp">
-        <Button android:text="Back" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="▲" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="Home" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="◀" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="OK" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="▶" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="Vol −" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="▼" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="Vol +" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="Mute" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:text="Play/Pause" android:layout_width="0dp" android:layout_columnSpan="2" android:layout_columnWeight="2"/>
+        <Button android:id="@+id/back" android:text="Back" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/up" android:text="▲" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/home" android:text="Home" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/left" android:text="◀" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/ok" android:text="OK" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/right" android:text="▶" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/volumeDown" android:text="Vol −" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/down" android:text="▼" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/volumeUp" android:text="Vol +" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/mute" android:text="Mute" android:layout_width="0dp" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/playPause" android:text="Play/Pause" android:layout_width="0dp" android:layout_columnSpan="2" android:layout_columnWeight="2"/>
     </GridLayout>
     <LinearLayout android:id="@+id/promo" android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="vertical" android:padding="12dp">
