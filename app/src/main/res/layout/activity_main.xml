@@ -4,6 +4,13 @@
     android:orientation="vertical" android:padding="20dp">
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="1SubTV Remote" android:textStyle="bold" android:textSize="28sp"/>
+    <LinearLayout android:id="@+id/infoBar" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="10dp" android:paddingBottom="10dp">
+        <TextView android:id="@+id/currentTime" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="--:--" android:textStyle="bold" android:textSize="18sp"/>
+        <TextView android:id="@+id/currentWeather" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Weather unavailable" android:textSize="16sp"/>
+    </LinearLayout>
     <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="Ready to find your TV" android:paddingTop="8dp" android:paddingBottom="12dp"/>
     <Button android:id="@+id/connect" android:layout_width="match_parent" android:layout_height="wrap_content"
