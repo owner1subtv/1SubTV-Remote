@@ -5,6 +5,9 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val status = findViewById<TextView>(R.id.status)
+        val currentTime = findViewById<TextView>(R.id.currentTime)
+        currentTime.text = SimpleDateFormat("h:mm a", Locale.getDefault()).format(Date())
         discovery = TvDiscovery(this) { devices ->
             runOnUiThread {
                 status.text = if (devices.isEmpty()) "No TV found yet — keep both devices on the same Wi-Fi"
