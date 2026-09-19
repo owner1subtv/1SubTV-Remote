@@ -8,6 +8,8 @@
         android:text="Ready to find your TV" android:paddingTop="8dp" android:paddingBottom="12dp"/>
     <Button android:id="@+id/connect" android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="Find &amp; Connect TV"/>
+    <Button android:id="@+id/power" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="⏻ Power"/>
     <Button android:id="@+id/voice" android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="🎙 Voice Search"/>
     <GridLayout android:layout_width="match_parent" android:layout_height="0dp"
