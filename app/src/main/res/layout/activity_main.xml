@@ -1,43 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical" android:padding="20dp">
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="1SubTV Remote" android:textStyle="bold" android:textSize="28sp"/>
-    <LinearLayout android:id="@+id/infoBar" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="10dp" android:paddingBottom="10dp">
-        <TextView android:id="@+id/currentTime" android:layout_width="0dp" android:layout_height="wrap_content"
-            android:layout_weight="1" android:text="--:--" android:textStyle="bold" android:textSize="18sp"/>
-        <TextView android:id="@+id/currentWeather" android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Weather unavailable" android:textSize="16sp"/>
-    </LinearLayout>
-    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="Ready to find your TV" android:paddingTop="8dp" android:paddingBottom="12dp"/>
-    <Button android:id="@+id/connect" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="Find &amp; Connect TV"/>
-    <Button android:id="@+id/power" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="⏻ Power"/>
-    <Button android:id="@+id/voice" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:text="🎙 Voice Search"/>
-    <GridLayout android:layout_width="match_parent" android:layout_height="0dp"
-        android:layout_weight="1" android:columnCount="3" android:rowCount="4" android:paddingTop="12dp">
-        <Button android:id="@+id/back" android:text="Back" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/up" android:text="▲" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/home" android:text="Home" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/left" android:text="◀" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/ok" android:text="OK" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/right" android:text="▶" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/volumeDown" android:text="Vol −" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/down" android:text="▼" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/volumeUp" android:text="Vol +" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/mute" android:text="Mute" android:layout_width="0dp" android:layout_columnWeight="1"/>
-        <Button android:id="@+id/playPause" android:text="Play/Pause" android:layout_width="0dp" android:layout_columnSpan="2" android:layout_columnWeight="2"/>
-    </GridLayout>
-    <LinearLayout android:id="@+id/promo" android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:orientation="vertical" android:padding="12dp">
-        <TextView android:id="@+id/promoTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="1SubTV" android:textStyle="bold"/>
-        <TextView android:id="@+id/promoText" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Helpful offers can appear here without interrupting your remote."/>
-    </LinearLayout>
-</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent" android:background="#070B12" android:fillViewport="true">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+   <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1Sub Remote" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="28sp"/>
+   <Button android:id="@+id/power" android:layout_width="56dp" android:layout_height="56dp" android:text="⏻" android:textSize="22sp"/>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/infoBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+   <TextView android:id="@+id/currentTime" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="--:--" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
+   <TextView android:id="@+id/currentWeather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weather" android:textColor="#8EA2BD"/>
+  </LinearLayout>
+  <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Finding your TV…" android:textColor="#8EA2BD" android:paddingBottom="12dp"/>
+  <Button android:id="@+id/connect" android:layout_width="match_parent" android:layout_height="52dp" android:text="Find &amp; Connect TV"/>
+  <Button android:id="@+id/voice" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="8dp" android:text="🎙  Voice Search"/>
+  <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="3" android:rowCount="4" android:paddingTop="14dp">
+   <Button android:id="@+id/back" android:text="Back" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/up" android:text="▲" android:textSize="24sp" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/home" android:text="Home" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/left" android:text="◀" android:textSize="24sp" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/ok" android:text="OK" android:textStyle="bold" android:textSize="20sp" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/right" android:text="▶" android:textSize="24sp" android:layout_width="0dp" android:layout_height="72dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/volumeDown" android:text="VOL −" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/down" android:text="▼" android:textSize="24sp" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/volumeUp" android:text="VOL +" android:layout_width="0dp" android:layout_height="64dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/mute" android:text="Mute" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1"/>
+   <Button android:id="@+id/playPause" android:text="▶  Play / Pause" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnSpan="2" android:layout_columnWeight="2"/>
+  </GridLayout>
+  <LinearLayout android:id="@+id/promo" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:layout_marginTop="14dp" android:background="#101827">
+   <TextView android:id="@+id/promoTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1SubTV" android:textColor="#FFFFFF" android:textStyle="bold"/>
+   <TextView android:id="@+id/promoText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your entertainment. One subscription." android:textColor="#8EA2BD" android:paddingTop="3dp"/>
+  </LinearLayout>
+ </LinearLayout>
+</ScrollView>
